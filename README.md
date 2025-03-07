@@ -31,10 +31,8 @@ This project is a RESTful API built with Node.js, Express.js, and MongoDB that m
 
 ## 🛠️ Installation
 
-## 1. Clone the repository
+1. Clone the repository
 
 ```bash
 git clone https://github.com/yourusername/library-api.git
-cd library-api ```
-
-## 2. Install dependencies
+cd library-api
