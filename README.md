@@ -5,7 +5,7 @@ This is a RESTful API for managing a library's book collection using Node.js, Ex
 
 ## 📂 Project Folder Structure
 
-
+```
 📁 library-api
 │── 📁 config/               # Configuration files (DB connection, etc.)
 │── 📁 controllers/          # Controllers for handling requests
@@ -32,7 +32,7 @@ This is a RESTful API for managing a library's book collection using Node.js, Ex
 
 ## 🚀 Getting Started
 
-### 1️⃣ Prerequisites
+### Prerequisites
 
 Ensure you have the following installed:
 
@@ -40,7 +40,7 @@ Ensure you have the following installed:
 - MongoDB (Local or Atlas)
 - Postman (for API testing)
 
-### 2️⃣ Installation
+### Installation
 
 Clone the repository and install dependencies:
 
@@ -53,7 +53,7 @@ cd library-api
 npm install
 ```
 
-### 3️⃣ Setup Environment Variables
+### Setup Environment Variables
 
 Create a `.env` file in the root directory and add the following:
 
@@ -64,7 +64,7 @@ JWT_SECRET=your_jwt_secret_key
 COOKIE_SECRET=your_cookie_secret_key
 ```
 
-### 4️⃣ Start the Server
+### Start the Server
 
 ```sh
 npm start  # Start the server in production mode
@@ -77,21 +77,21 @@ The server will run on `http://localhost:5000`.
 
 ### 🛠️ Authentication Routes (/api/users)
 
-| Method | Route     | Description       | Authentication |
-|--------|-----------|-------------------|----------------|
+| Method | Route     | Description         | Authentication |
+|--------|-----------|---------------------|----------------|
 | POST   | /register | Register a new user | No             |
-| POST   | /login    | Log in a user     | No             |
-| POST   | /logout   | Log out a user    | Yes            |
+| POST   | /login    | Log in a user       | No             |
+| POST   | /logout   | Log out a user      | Yes            |
 
 ### 📚 Book Routes (/api/books)
 
-| Method | Route | Description           | Authentication |
-|--------|-------|-----------------------|----------------|
-| GET    | /     | Get all books         | No             |
-| GET    | /:id  | Get a single book by ID | No           |
-| POST   | /     | Add a new book        | Yes            |
-| PUT    | /:id  | Update a book by ID   | Yes            |
-| DELETE | /:id  | Delete a book by ID   | Yes            |
+| Method | Route | Description             | Authentication |
+|--------|-------|-------------------------|----------------|
+| GET    | /     | Get all books           | No             |
+| GET    | /:id  | Get a single book by ID | No             |
+| POST   | /     | Add a new book          | Yes            |
+| PUT    | /:id  | Update a book by ID     | Yes            |
+| DELETE | /:id  | Delete a book by ID     | Yes            |
 
 ## 🔐 Authentication & Token Handling
 
@@ -103,7 +103,7 @@ On logout, the cookie is cleared.
 
 ## 📌 Testing the API with Postman
 
-### 1️⃣ Register a User
+### Register a User
 
 - URL: `POST http://localhost:5000/api/users/register`
 - Body (JSON):
@@ -116,7 +116,7 @@ On logout, the cookie is cleared.
 }
 ```
 
-### 2️⃣ Login User
+### Login User
 
 - URL: `POST http://localhost:5000/api/users/login`
 - Body (JSON):
@@ -130,7 +130,7 @@ On logout, the cookie is cleared.
 
 - Response: Token stored in cookies
 
-### 3️⃣ Create a Book (Authenticated)
+### Create a Book (Authenticated)
 
 - URL: `POST http://localhost:5000/api/books`
 - Headers:
@@ -150,15 +150,15 @@ Cookie: token=your_jwt_token
 }
 ```
 
-### 4️⃣ Get All Books
-
+### Get All Books
+```
 - URL: `GET http://localhost:5000/api/books`
-
-### 5️⃣ Update a Book (Authenticated)
-
+```
+### Update a Book (Authenticated)
+```
 - URL: `PUT http://localhost:5000/api/books/:id`
 - Headers:
-
+```
 ```
 Cookie: token=your_jwt_token
 ```
@@ -174,7 +174,7 @@ Cookie: token=your_jwt_token
 }
 ```
 
-### 6️⃣ Delete a Book (Authenticated)
+### Delete a Book (Authenticated)
 
 - URL: `DELETE http://localhost:5000/api/books/:id`
 - Headers:
