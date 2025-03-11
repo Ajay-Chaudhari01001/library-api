@@ -1,11 +1,11 @@
-```markdown
+
 # Library Management API
 
 This is a RESTful API for managing a library's book collection using Node.js, Express.js, and MongoDB. The API supports authentication, data validation with Joi, and CRUD operations for books.
 
 ## 📂 Project Folder Structure
 
-```
+
 📁 library-api
 │── 📁 config/               # Configuration files (DB connection, etc.)
 │── 📁 controllers/          # Controllers for handling requests
