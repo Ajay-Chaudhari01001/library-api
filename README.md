@@ -110,8 +110,8 @@ On logout, the cookie is cleared.
 
 ```json
 {
-    "name": "John Doe",
-    "email": "john@example.com",
+    "name": "Ajay Chaudhari",
+    "email": "ajay@testing.com",
     "password": "123456"
 }
 ```
@@ -123,7 +123,7 @@ On logout, the cookie is cleared.
 
 ```json
 {
-    "email": "john@example.com",
+    "email": "ajay@testing.com",
     "password": "123456"
 }
 ```
